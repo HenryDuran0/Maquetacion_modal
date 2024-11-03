@@ -1,0 +1,45 @@
+@media screen and (max-width:480px){
+    .cont_main {
+        flex-direction: column;
+    }
+
+    .cont_info {
+        padding: 10px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .cont_botones {
+        flex-direction: column;
+        width: 100%;
+        height: 110px;
+        text-align: center;
+    }
+
+    .cont_botones a {
+        width: 190px;
+    }
+
+    /* fotos */
+
+    .cont_fotos {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+        gap: 0px;
+    }
+
+    .cont_foto_info {
+        height: 340px;
+    }
+
+    /* Modal */
+
+    .cont_modal {
+        padding-block: 50px;
+        padding-inline: 30px;
+        width: 90%;
+        height: 550px;
+    }
+}

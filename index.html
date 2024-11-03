@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="movil.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/429099fef3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="ancho">
+            <figure class="fig_header">
+                <img src="imagenes/logo.jpg" alt="">
+            </figure>
+        </div>
+    </header>
+
+    <section class="cont_main ">
+        <article class="cont_info">
+            <p class="gris">Our Team</p>
+            <h2 class="gris1">A Dedicated Team of Experts</h2>
+            <br>
+            <p class="gris1 p">Passion, experience and a fierce commitment to education are the cornerstones of our success in the beauty industry</p>
+            <br>
+            <p class="gris2">We believe that being the largest SPA in the area is not enough in itself to satisfy the needs of our customers. For this reason we have built up a staff of specialized professionals who are proud to welcome you to our hotel, present What We Do, listen to your needs and guarantee well-being and relaxation during your stay at our SPA Resort.</p>
+            <br>
+            <p class="gris2">Everyone in our team is a certified specialist capable of delivering a unique service of high quality you won't find anywhere else in modern spa and resort industry.</p>
+            <div class="cont_botones">
+                <a href="#">LEAR MORE</a>
+                <a href="#">VIEW ALL TEAM</a>
+            </div>
+        </article>
+        <article class="cont_fotos">
+            <div class="cont_foto_info">
+                <figure class="fig_foto">
+                    <img src="imagenes/foto1.jpg" alt="">
+                </figure>
+                <h2>Jessica Cooper</h2>
+                <p>Esthetician</p>
+                <div class="cont_redes">
+                    <a href="#"><i class='fab fa-facebook-f'></i></a>
+                    <a href="#"><i class='iconos fa-brands fa-twitter'></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <a href="#" class="btn_foto">GET IN TOUCH</a>
+            </div>
+            <div class="cont_foto_info">
+                <figure class="fig_foto">
+                    <img src="imagenes/foto2.jpg" alt="">
+                </figure>
+                <h2>Jessica Cooper</h2>
+                <p>Hairdresser</p>
+                <div class="cont_redes">
+                    <a href="#"><i class='fab fa-facebook-f'></i></a>
+                    <a href="#"><i class='iconos fa-brands fa-twitter'></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <a href="#" class="btn_foto">GET IN TOUCH</a>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer"></footer>
+
+    <section class="filtro_modal" id="modal">
+        <article class="cont_modal">
+            <h2>Contac Us</h2>
+            <br>
+            <p>If you have any questions concerning our services, please fill out the form contact below.</p>
+            <br>
+            <input type="text" placeholder="Name *">
+            <br>
+            <input type="text" placeholder="E-mail *">
+            <br>
+            <textarea placeholder="Message *" rows="7"></textarea>
+            <br>
+            <a href="#">Submit</a>
+            <div id="btn_cerrar">X</div>
+        </article>
+    </section>
+
+    <!-- scripts -->
+
+    <script>
+        //Cerrar modal con boton
+        $("#btn_cerrar").click(function() {
+            $("#modal").removeClass("mostrar");
+        });
+        //Abrir modal automaticamente con tiempo
+        function tiempo() {
+            $("#modal").addClass("mostrar");
+        };
+        setTimeout(tiempo, 1000);
+        //Cerrar modal con click fuera de la ventana
+        window.onclick = function (event) {
+            if(event.target === modal) {
+                $("#modal").removeClass("mostrar");
+            }
+        };
+        //Cerrar modal con esc
+        document.addEventListener('keydown', function
+        (event) {
+            if(event.key === 'Escape') {
+                $("#modal").removeClass("mostrar");
+            }
+        });
+    </script>
+</body>
+</html>
